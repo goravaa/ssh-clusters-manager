@@ -39,7 +39,7 @@ class SSHConnectionError(Exception):
 # ---------------------------------------------------------------------------
 
 
-@dataclass(slots=True)
+@dataclass()
 class HostInfo:
     """Minimal information required to establish an SSH session."""
 
@@ -61,7 +61,7 @@ class HostInfo:
         )
 
 
-@dataclass(slots=True)
+@dataclass()
 class Result:
     """Outcome of a remote operation (exec or SFTP)."""
 
