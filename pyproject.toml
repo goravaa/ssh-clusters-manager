@@ -1,5 +1,5 @@
 [project]
-name = "sshmanager"
+name = "ssh-clusters-manager"
 version = "0.1.0"
 description = ""
 authors = [{ name = "garv.works@outlook.com" }]
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-name        = "ssh-cluster-manager"       # your unique package name
+name        = "ssh-clusters-manager"       # your unique package name
 version     = "0.1.0"            # the version you tagged
 description = "Lightweight Python library for parallel SSH operations"
 authors     = ["Gaurav Yadav garv.works@outlook.com"]
