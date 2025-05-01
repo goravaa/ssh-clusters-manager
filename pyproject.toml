@@ -16,7 +16,20 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{ include = "ssh_cluster" }]  # ✅ THIS is what was missing
+name        = "sshmanager"       # your unique package name
+version     = "0.1.0"            # the version you tagged
+description = "Lightweight Python library for parallel SSH operations"
+authors     = ["Gaurav Yadav garv.works@outlook.com"]
+license     = "MIT"
+readme      = "README.md"
+homepage    = "https://github.com/goravaa/SSHManager"
+repository  = "https://github.com/goravaa/SSHManager"
+keywords    = ["ssh", "parallel", "cluster", "automation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
