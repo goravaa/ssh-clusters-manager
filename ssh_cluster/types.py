@@ -48,7 +48,7 @@ class HostInfo:
     username: str | None = None
     password: str | None = None
     key_filename: str | None = None
-
+    label: str | None = None
     @classmethod
     def from_mapping(cls, data: Mapping[str, str]) -> "HostInfo":
         """Coerce a *dict-like* object (JSON/YAML) into :class:`HostInfo`."""
@@ -58,8 +58,8 @@ class HostInfo:
             username=data.get("username"),
             password=data.get("password"),
             key_filename=data.get("key_filename"),
+            label=data.get("label"),
         )
-
 
 @dataclass()
 class Result:
